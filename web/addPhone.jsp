@@ -52,22 +52,13 @@
                     <%}%>
                 </div>
 
-                <%--<div class="form-group">--%>
-                    <%--<label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">brand</label>--%>
-                    <%--<select class="custom-select mr-sm-2" id="inlineFormCustomSelect">--%>
-                        <%--<option value="nokia">Nokia</option>--%>
-                        <%--<option value="apple">Apple</option>--%>
-                        <%--<option value="samsung">Samsung</option>--%>
-                    <%--</select>--%>
-                <%--</div>--%>
                 <div class="form-group">
-                    <label for="brand">Brand:</label>
-                    <input type="text" class="form-control" id="brand" placeholder="Enter brand"
-                           name="brand">
-                    <%--<% if (errors.containsKey("description")) {%>--%>
-                    <%--<p class="text-danger"><%= errors.get("description")%>--%>
-                    <%--</p>--%>
-                    <%--<%}%>--%>
+                    <label for="Brand">Brand</label>
+                    <select class="custom-select mr-sm-2" >
+                        <option value="nokia">Nokia</option>
+                        <option value="apple">Apple</option>
+                        <option value="samsung">Samsung</option>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="description">Description:</label>

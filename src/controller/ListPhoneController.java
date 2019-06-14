@@ -1,6 +1,7 @@
 package controller;
 
 import entity.Phone;
+import model.PhoneModel;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -12,7 +13,8 @@ public class ListPhoneController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.setCharacterEncoding("UTF-8");
-        Phone phone = new Phone();
-
+        PhoneModel phoneModel = new PhoneModel();
+        req.setAttribute("listPhone", phoneModel.select());
+        req.getRequestDispatcher("listPhone.jsp").forward(req,resp);
     }
 }
